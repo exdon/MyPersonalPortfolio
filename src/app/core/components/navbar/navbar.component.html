@@ -1,0 +1,29 @@
+<header>
+    <div class="menu-section">
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <nav>
+            <ul>
+              <li>
+                <a href="#">{{'nav.home' | translate }}</a>
+              </li>
+              <li>
+                <a href="#">{{'nav.about' | translate }}</a>
+              </li>
+              <li>
+                <a href="#">{{'nav.contact' | translate }}</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+        </nav>
+        <nav>
+            <button value="en-US" (click)="changeLanguage($event)">ENG</button>
+            <button value="pt-BR" (click)="changeLanguage($event)">POR</button>
+        </nav>
+    </div>
+</header>

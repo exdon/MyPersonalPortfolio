@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-portfolio';
+
+  constructor(private translate: TranslateService) {}
 }
