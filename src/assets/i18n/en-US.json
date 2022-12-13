@@ -3,5 +3,16 @@
     "home": "HOME",
     "about": "ABOUT",
     "contact": "CONTACT"
+  },
+  "home": {
+    "saudation": "― Hello, I'm",
+    "introduction": "Erik Xavier",
+    "jobTitle": "Front End | Full Stack Developer",
+    "buttonLabel": "Contact me!",
+    "buttonDownloadLabel": "Download CV"
+  },
+  "about": {
+    "title": "Who I Am",
+    "description": "Teste"
   }
 }

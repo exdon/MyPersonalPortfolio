@@ -26,7 +26,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeModule,
     HttpClientModule,
     CoreModule,
-    SharedModule,
     TranslateModule.forRoot({
       defaultLanguage: localStorage.getItem('lang') || 'pt-BR',
       loader: {

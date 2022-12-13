@@ -1,0 +1,73 @@
+section {
+  .container-home {
+    .info {
+      margin: auto;
+      position: relative;
+      width: 80vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      letter-spacing: 2px;
+
+      span {
+        font-size: 2rem;
+      };
+
+      p {
+        line-height: 5.6rem;
+        font-size: 1.4rem;
+        color: gray;
+      }
+
+      .info__buttons {
+        position: absolute;
+        margin-top: 35rem;
+
+        a {
+          border: 1px solid var(--greenlight);
+          padding: 1.5rem;
+          font-size: 1.4rem;
+          width: 25rem;
+          color: var(--greenlight);
+          display: flex;
+          justify-content: center;
+          background: linear-gradient(to left, transparent 50%, var(--greenlight) 50%) right;
+          background-size: 200%;
+          transition: .5s ease-out;
+          margin-bottom: 10px;
+
+        }
+        a:hover {
+          background-position: left;
+          color: white;
+        }
+      }
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    .container-home {
+      .info {
+        .info__buttons {
+          a {
+            padding: 1.2rem !important;
+            font-size: 1.1rem !important;
+            width: 20rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Desktop
+  @media screen and (min-width: 992px) {
+
+  }
+
+  // Telas Grandes
+  @media screen and (min-width: 1200px) {
+
+  }
+}

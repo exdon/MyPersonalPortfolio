@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/saga-blue/theme.css";
+@import "~primeng/resources/primeng.min.css";
+
+:root {
+  --greenlight: #2eb8ac
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 50%;
+  color: white;
+}
+
+html,
+body {
+  font-family: "Source Sans Pro";
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: black;
+}
+
+h2 {
+  font-size: 6.6rem;
+  line-height: 6.6rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 250ms linear 0s;
+}
+
+a:hover {
+  background: rgba(255,255,255, 0.15);
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 992px) {
+
+}
+
+// Telas Grandes
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+
+  h2 {
+    font-size: 8.6rem;
+    line-height: 7.6rem;
+  }
+}
+
+  // Telas Ultra
+  @media screen and (min-width: 1920px) {
+    html {
+      font-size: 80%;
+    }
+
+    // h2 {
+    //   font-size: 8.6rem;
+    //   line-height: 7.6rem;
+    // }
+  }

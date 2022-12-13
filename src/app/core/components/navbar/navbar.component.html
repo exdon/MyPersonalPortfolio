@@ -1,29 +1,43 @@
 <header>
     <div class="menu-section">
-        <div class="menu-toggle">
+        <div [ngClass]="{'on': openMenuToggle}">
+          <div class="menu-toggle">
             <div class="one"></div>
             <div class="two"></div>
             <div class="three"></div>
+          </div>
+          <span class="spacer"></span>
+          <nav class="menu-sections__nav-items">
+              <ul>
+                <li>
+                  <a routerLink="" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)="openMenuToggle=false">{{'nav.home' | translate }}</a>
+                </li>
+                <li>
+                  <a routerLink="about" routerLinkActive="active" (click)="openMenuToggle=false">{{'nav.about' | translate }}</a>
+                </li>
+                <li>
+                  <a href="#" routerLinkActive="active" >{{'nav.contact' | translate }}</a>
+                </li>
+                <li>
+                  <a href="#" routerLinkActive="active">Blog</a>
+                </li>
+              </ul>
+          </nav>
+          <span class="spacer"></span>
+          <nav class="menu-sections__nav-buttons">
+              <a
+                value="en-US"
+                [ngClass]="{'activated' : getCurrentLanguage() === 'en-US' }"
+                (click)="changeLanguage('en-US')">
+                ENG
+              </a>
+              <a
+                value="pt-BR"
+                [ngClass]="{'activated' : getCurrentLanguage() === 'pt-BR' }"
+                (click)="changeLanguage('pt-BR')">
+                POR
+              </a>
+          </nav>
         </div>
-        <nav>
-            <ul>
-              <li>
-                <a href="#">{{'nav.home' | translate }}</a>
-              </li>
-              <li>
-                <a href="#">{{'nav.about' | translate }}</a>
-              </li>
-              <li>
-                <a href="#">{{'nav.contact' | translate }}</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-        </nav>
-        <nav>
-            <button value="en-US" (click)="changeLanguage($event)">ENG</button>
-            <button value="pt-BR" (click)="changeLanguage($event)">POR</button>
-        </nav>
     </div>
 </header>

@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 import { AboutModule } from '../about/about.module';
 import { ContactModule } from '../contact/contact.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ContactModule } from '../contact/contact.module';
     CommonModule,
     RouterModule,
     AboutModule,
-    ContactModule
+    ContactModule,
+    TranslateModule
   ]
 })
 export class HomeModule { }

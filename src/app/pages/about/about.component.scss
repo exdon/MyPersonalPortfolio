@@ -1,0 +1,52 @@
+.container-about {
+
+  .about-info {
+    position: relative;
+    width: 80vw;
+    letter-spacing: 2px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
+    .waviy {
+      -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+      font-size: 60px;
+      .space {
+        margin-left: 10px;
+      }
+
+    }
+    .waviy span {
+      font-family: 'Black Han Sans';
+      display: inline-block;
+      animation: waviy 1s infinite;
+      animation-delay: calc(.1s * var(--i));
+
+    }
+    @keyframes waviy {
+      0%,40%,100% {
+        transform: translateY(0)
+      }
+      20% {
+        transform: translateY(-20px)
+      }
+    }
+  }
+
+
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    .about-info {
+      // margin-top: 80px !important;
+    }
+  }
+}
+
+
+
+
+
+
