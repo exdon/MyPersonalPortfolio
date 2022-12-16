@@ -1,0 +1,16 @@
+<section>
+    <div class="container-experience">
+        <app-shared-title [title]="'experience.title'| translate"></app-shared-title>
+        <div class="card">
+            <p-timeline [value]="events1">
+                <ng-template pTemplate="content" let-event>
+                    <small class="p-text-secondary">{{event.period}}</small>
+                </ng-template>
+                <ng-template pTemplate="opposite" let-event>
+                    <p class="company-name">{{event.company}}</p>
+                    <p class="job-position">{{event.jobPosition}}</p>
+                </ng-template>
+            </p-timeline>
+        </div>
+    </div>
+</section>

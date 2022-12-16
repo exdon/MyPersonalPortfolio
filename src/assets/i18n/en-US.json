@@ -1,8 +1,11 @@
 {
   "nav": {
-    "home": "HOME",
-    "about": "ABOUT",
-    "contact": "CONTACT"
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
   },
   "home": {
     "saudation": "― Hello, I'm",
@@ -13,6 +16,14 @@
   },
   "about": {
     "title": "Who I Am",
-    "description": "Teste"
+    "description": {
+      "paragraph1": "I'm a Full Stack Developer, with more focus on Front End, using technologies such as Angular, Angular Elements, Spring Boot, Apache Camel, Unit Testing and languages like TypeScript and Java.",
+      "paragraph2": "I've been working with some technologies such as JavaScript, HTML, CSS, SASS, Kotlin, Git, Gitlab, React, React Native, Python, Next.js, SQL among others.",
+      "paragraph3": "Located in São Paulo - Brazil, I'm constantly learning and improving my knowledge of new technologies, creating small personal projects, with a good command of good programming practices and design patterns and always looking for innovations and challenges as well."
+    },
+    "buttonLabel": "Let's Talk"
+  },
+  "experience": {
+    "title": "Experiences"
   }
 }

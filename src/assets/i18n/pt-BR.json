@@ -1,8 +1,11 @@
 {
   "nav": {
-    "home": "HOME",
-    "about": "SOBRE",
-    "contact": "CONTATO"
+    "home": "Home",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "contact": "Contato"
   },
   "home": {
     "saudation": "― Olá, Eu sou o",
@@ -12,19 +15,15 @@
     "buttonDownloadLabel": "Download CV"
   },
   "about": {
-    "title": {
-      "l1": "Q",
-      "l2": "u",
-      "l3": "e",
-      "l4": "m",
-      "l5": " ",
-      "l6": "S",
-      "l7": "o",
-      "l8": "u",
-      "l9": " ",
-      "l10": "E",
-      "l11": "u"
+    "title": "Quem Sou Eu",
+    "description": {
+      "paragraph1": "Sou um desenvolvedor Full Stack, com maior atuação em Front End, utilizando tecnologias como Angular, Angular Elements, Spring Boot, Apache Camel, Testes Unitários e linguagens como TypeScript e Java.",
+      "paragraph2": "Tenho domínio também em ferramentas e linguagens de programação como JavaScript, HTML, CSS, SASS, Kotlin, Git, Gitlab, React, React Native, Next.js, SQL, Python, dentre outras.",
+      "paragraph3": "Moro em São Paulo - Brasil e estou em constante aprendizado e aperfeiçoamento de meus conhecimentos em novas tecnologias, criando pequenos projetos pessoais, com um bom domínio de boas práticas de programação e padrões de projeto e sempre em busca de novidades e desafios."
     },
-    "description": "Teste"
+    "buttonLabel": "Vamos Conversar"
+  },
+  "experience": {
+    "title": "Experiencias"
   }
 }

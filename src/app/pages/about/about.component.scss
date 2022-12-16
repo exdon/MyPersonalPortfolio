@@ -1,46 +1,62 @@
 .container-about {
-
   .about-info {
     position: relative;
-    width: 80vw;
     letter-spacing: 2px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
+    font-size: 1.5rem;
 
-    .waviy {
-      -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-      font-size: 60px;
-      .space {
-        margin-left: 10px;
-      }
-
+    p {
+      padding: 1rem;
     }
-    .waviy span {
-      font-family: 'Black Han Sans';
-      display: inline-block;
-      animation: waviy 1s infinite;
-      animation-delay: calc(.1s * var(--i));
 
+      a {
+        border: 1px solid var(--greenlight);
+        padding: 1.5rem;
+        font-size: 1.4rem;
+        width: 25rem;
+        color: var(--greenlight);
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to left, transparent 50%, var(--greenlight) 50%) right;
+        background-size: 200%;
+        transition: .5s ease-out;
+        margin-bottom: 10px;
+
+      }
+      a:hover {
+        background-position: left;
+        color: white;
+      }
+
+  }
+
+  @media screen and (min-width: 600px) {
+    .about-info {
+      width: 60rem;
     }
-    @keyframes waviy {
-      0%,40%,100% {
-        transform: translateY(0)
-      }
-      20% {
-        transform: translateY(-20px)
-      }
+  }
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    .about-info {
+      width: 54vw;
+      margin-left: 5rem;
     }
   }
 
 
-
-  // Tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     .about-info {
-      // margin-top: 80px !important;
+      width: 42vw;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .about-info {
+      width: 30vw;
     }
   }
 }

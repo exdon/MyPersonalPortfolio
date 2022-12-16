@@ -11,11 +11,14 @@
         {{'home.jobTitle' | translate }}
       </p>
       <div class="info__buttons">
-        <a href="#" class="button">{{'home.buttonLabel' | translate }}</a>
-        <a href="#" class="button" (click)="dowloadMyCV()">{{'home.buttonDownloadLabel' | translate }}</a>
+        <!-- <a class="button">{{'home.buttonLabel' | translate }}</a>
+        <a class="button" (click)="dowloadMyCV()">{{'home.buttonDownloadLabel' | translate }}</a> -->
+        <app-shared-button [buttonLabel]="'home.buttonLabel' | translate" (buttonClickEvent)="goTocontactPage()" ></app-shared-button>
+        <app-shared-button [buttonLabel]="'home.buttonDownloadLabel' | translate" (buttonClickEvent)="dowloadMyCV()" ></app-shared-button>
       </div>
     </div>
     <app-about></app-about>
+    <app-experience></app-experience>
     <app-contact></app-contact>
   </div>
 </section>

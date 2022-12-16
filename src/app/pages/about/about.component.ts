@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+
+  goTocontactPage() {
+    console.log("chamou")
+  }
 }

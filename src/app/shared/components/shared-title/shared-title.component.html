@@ -1,0 +1,8 @@
+<div class="waviy" *ngFor="let letter of title | split; let i = index">
+    <!-- <span [ngStyle]="[letter !== ' ' ? '--i:' + i+1 : 'space' ]">{{letter}}</span> -->
+    <span
+        [ngStyle]="{ '--i': letter !== ' ' ? i : ''}"
+        [ngClass]="letter === ' ' ? 'space' : ''">
+        {{letter}}
+    </span>
+</div>

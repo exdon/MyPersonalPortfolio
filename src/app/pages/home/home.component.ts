@@ -18,4 +18,8 @@ export class HomeComponent {
     console.log("dowloading....")
   }
 
+  goTocontactPage() {
+    console.log("chamou")
+  }
+
 }

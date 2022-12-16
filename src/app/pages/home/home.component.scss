@@ -1,9 +1,7 @@
 section {
   .container-home {
     .info {
-      margin: auto;
       position: relative;
-      width: 80vw;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -23,32 +21,17 @@ section {
       .info__buttons {
         position: absolute;
         margin-top: 35rem;
-
-        a {
-          border: 1px solid var(--greenlight);
-          padding: 1.5rem;
-          font-size: 1.4rem;
-          width: 25rem;
-          color: var(--greenlight);
-          display: flex;
-          justify-content: center;
-          background: linear-gradient(to left, transparent 50%, var(--greenlight) 50%) right;
-          background-size: 200%;
-          transition: .5s ease-out;
-          margin-bottom: 10px;
-
-        }
-        a:hover {
-          background-position: left;
-          color: white;
-        }
       }
     }
   }
 
-  // Tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     .container-home {
+      .item-left {
+        width: 60rem;
+        margin-left: 5rem;
+      }
+
       .info {
         .info__buttons {
           a {
@@ -59,6 +42,39 @@ section {
         }
       }
     }
+  }
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    .container-home {
+      .item-left {
+        width: 54vw;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 1440px) {
+    .container-home {
+      .item-left {
+        width: 42vw;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .container-home {
+      .item-left {
+        width: 30vw;
+      }
+    }
+  }
+
+
+
+
+  // Tablet
+  @media screen and (min-width: 768px) {
   }
 
   // Desktop

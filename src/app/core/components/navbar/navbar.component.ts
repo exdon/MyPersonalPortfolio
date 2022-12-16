@@ -53,7 +53,7 @@ export class NavbarComponent implements AfterViewInit, OnInit {
     .observe(['(min-width: 768px)'])
     .subscribe((state: BreakpointState) => {
       if (state.matches) {
-        this.openMenuToggle = false;
+        this.toggleChanges();
       }
     });
 
@@ -61,11 +61,17 @@ export class NavbarComponent implements AfterViewInit, OnInit {
     console.log(this.activatedRoute.snapshot.url)
   }
 
+
   ngAfterViewInit(): void {
       this.elementRef.nativeElement.querySelector(".menu-toggle").addEventListener('click', () => {
         document.body.style.overflow = this.openMenuToggle ? "initial" : "hidden";
         this.openMenuToggle = !this.openMenuToggle;
       });
+  }
+
+  toggleChanges() {
+    this.openMenuToggle = false;
+    document.body.style.overflow = "initial";
   }
 
   changeLanguage(language: string) {
